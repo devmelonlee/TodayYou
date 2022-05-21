@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x7M-Ev-ZO1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FHQ-b5-ZlA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,224 +8,361 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--일기장-->
-        <scene sceneID="Wks-1C-bkT">
-            <objects>
-                <navigationController id="5XI-gv-gsp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="일기장" selectedImage="megazine.fill" id="702-RP-lXl"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vvw-vP-XJt">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="rbW-FR-NvR" kind="relationship" relationship="rootViewController" id="bIP-Fh-6Ki"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dxp-L9-bHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1900" y="-1274"/>
-        </scene>
-        <!--일기장-->
-        <scene sceneID="KLX-gh-VTU">
-            <objects>
-                <viewController id="rbW-FR-NvR" customClass="DiaryViewController" customModule="TodayYou" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WbS-B8-R3P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="035-rN-p5B"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="일기장" id="Wf2-CV-Nhe"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FAB-Lc-W4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1049" y="-1274"/>
-        </scene>
-        <!--캘린더-->
-        <scene sceneID="id4-hx-dke">
-            <objects>
-                <navigationController id="KV5-T7-MeB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="캘린더" selectedImage="calendar" catalog="system" id="UYb-1s-JNK"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oAd-Qn-kRP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="JqH-ao-hXv" kind="relationship" relationship="rootViewController" id="dJ2-dI-hgJ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="55l-jS-xib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1900" y="-613"/>
-        </scene>
-        <!--캘린더-->
-        <scene sceneID="zUj-FJ-x3v">
-            <objects>
-                <viewController id="JqH-ao-hXv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qvy-9K-m8x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCO-0x-c1a">
-                                <rect key="frame" x="186" y="438" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hAb-bT-xXg">
-                                <rect key="frame" x="20" y="88" width="374" height="685"/>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.72549019607843135" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="hAb-bT-xXg" secondAttribute="height" multiplier="374:685" id="FNZ-o5-sHf"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cIa-sk-Wv1">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Guh-qE-2kB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="캘린더" id="ZlN-lQ-nSQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eSh-jp-Jsf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1062" y="-613"/>
-        </scene>
-        <!--남들은 뭐하지?-->
-        <scene sceneID="Qfv-8s-JyC">
-            <objects>
-                <navigationController id="iQl-cW-hjF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="남들은 뭐하지?" id="uQK-fZ-GAE"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tgW-w2-nU5">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="vmH-f3-mVt" kind="relationship" relationship="rootViewController" id="xyk-2W-bDW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pcJ-7X-dA4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1875" y="1412"/>
-        </scene>
-        <!--남들은 뭐하지?-->
-        <scene sceneID="3zp-gd-qaq">
-            <objects>
-                <viewController id="vmH-f3-mVt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c2G-SP-VdQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="o1O-42-DLz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="남들은 뭐하지?" id="08E-6O-mLS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ihY-mK-59f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1062" y="1412"/>
-        </scene>
-        <!--할 일-->
-        <scene sceneID="FVq-oc-6IC">
-            <objects>
-                <navigationController id="ZkX-hV-tAq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="할 일" id="hQB-Gq-7MT"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sv2-k4-THU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="3W9-DD-Yuf" kind="relationship" relationship="rootViewController" id="OBE-Zs-ACk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ci7-co-yVf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1890" y="744"/>
-        </scene>
-        <!--할 일-->
-        <scene sceneID="IU3-NF-FM3">
-            <objects>
-                <viewController id="3W9-DD-Yuf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="chW-n6-RYp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Q3l-2I-LTM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="할 일" id="ORq-1r-Ulz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YJz-zr-PrC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1062" y="744"/>
-        </scene>
-        <!--메인페이지-->
-        <scene sceneID="nPj-T4-W2l">
-            <objects>
-                <navigationController id="CVt-uS-DYC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="메인페이지" id="byd-UQ-gg5">
-                        <color key="badgeColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gwq-81-VkR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="b0Z-Qk-B32" kind="relationship" relationship="rootViewController" id="rgD-5Q-muY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cCu-LC-lkJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1900" y="31"/>
-        </scene>
-        <!--5월 18일의 너-->
-        <scene sceneID="SWW-8a-Vif">
-            <objects>
-                <viewController id="b0Z-Qk-B32" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="E2D-0J-0bb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="E3Y-KC-oBJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="5월 18일의 너" id="4p4-Oa-z9f"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2df-g6-m5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1049.2753623188407" y="30.803571428571427"/>
-        </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="aWD-v8-mbA">
+        <scene sceneID="j2Z-Zy-cQf">
             <objects>
-                <tabBarController id="x7M-Ev-ZO1" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="foE-hK-pQe">
+                <tabBarController id="FHQ-b5-ZlA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B3a-ad-w8R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="5XI-gv-gsp" kind="relationship" relationship="viewControllers" id="fkD-sN-Sqx"/>
-                        <segue destination="KV5-T7-MeB" kind="relationship" relationship="viewControllers" id="ERx-8X-Izs"/>
-                        <segue destination="CVt-uS-DYC" kind="relationship" relationship="viewControllers" id="JIz-Y2-kDA"/>
-                        <segue destination="ZkX-hV-tAq" kind="relationship" relationship="viewControllers" id="SJV-am-Uwt"/>
-                        <segue destination="iQl-cW-hjF" kind="relationship" relationship="viewControllers" id="zZo-dA-npz"/>
+                        <segue destination="LUP-PB-tLC" kind="relationship" relationship="viewControllers" id="IlQ-Ik-thH"/>
+                        <segue destination="Yry-vW-a4A" kind="relationship" relationship="viewControllers" id="qrM-qj-z1n"/>
+                        <segue destination="UbW-BK-Jk6" kind="relationship" relationship="viewControllers" id="4pC-iv-AQ4"/>
+                        <segue destination="ypf-dM-u1V" kind="relationship" relationship="viewControllers" id="wWi-MR-tWn"/>
+                        <segue destination="RXO-lM-8Vh" kind="relationship" relationship="viewControllers" id="DdC-zE-7EM"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TGi-DG-pRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asD-m6-yzj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2822" y="32"/>
+            <point key="canvasLocation" x="-12706" y="-5123"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="Wx4-cP-EdB">
+            <objects>
+                <navigationController id="LUP-PB-tLC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="menucard" catalog="system" selectedImage="menucard.fill" id="C6Q-MB-KaF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ri-ER-WV3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GGH-9C-24F" kind="relationship" relationship="rootViewController" id="yHM-Wy-5jv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVE-Kc-c5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11691" y="-6426"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5k1-G3-8P4">
+            <objects>
+                <viewController id="GGH-9C-24F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RTn-5w-vHc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSD-tN-dWy">
+                                <rect key="frame" x="24" y="112" width="366" height="677"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qiR-IJ-wOC">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="553"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7ph-g0-eCG">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="179"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foC-0d-1BG" customClass="RoundCornerButton" customModule="TodayYou" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="179"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="foC-0d-1BG" secondAttribute="height" id="UEE-Hs-kAg"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="일정 추가하기"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsk-wT-Bdm" customClass="RoundCornerButton" customModule="TodayYou" customModuleProvider="target">
+                                                        <rect key="frame" x="187" y="0.0" width="179" height="179"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Zsk-wT-Bdm" secondAttribute="height" multiplier="1:1" id="lbU-eE-Mel"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="다가오는 일정" cornerStyle="fixed"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hmP-dx-nRg">
+                                                <rect key="frame" x="0.0" y="187" width="366" height="179"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOc-n4-Qao" customClass="RoundCornerButton" customModule="TodayYou" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="179"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hOc-n4-Qao" secondAttribute="height" id="bV7-Sq-Ceq"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="오늘의 할 일 "/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Cc-4G-TOd">
+                                                        <rect key="frame" x="187" y="0.0" width="179" height="179"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTB-cc-7Ua" customClass="RoundCornerButton" customModule="TodayYou" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="81.5"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="날씨"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZh-tx-4HD" customClass="RoundCornerButton" customModule="TodayYou" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="89.5" width="179" height="89.5"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="mZh-tx-4HD" secondAttribute="height" multiplier="1:0.5" id="p6x-WZ-8Go"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="간단한 메모 추가"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="0Cc-4G-TOd" firstAttribute="width" secondItem="hOc-n4-Qao" secondAttribute="width" id="PJg-bT-lo3"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2iZ-aa-4cs">
+                                                <rect key="frame" x="0.0" y="374" width="366" height="179"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdI-mh-Dgv" customClass="RoundCornerButton" customModule="TodayYou" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="179"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hdI-mh-Dgv" secondAttribute="height" id="YdA-Xo-rd7"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="오늘은 어땠나요"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-Kd-Yfj" customClass="RoundCornerButton" customModule="TodayYou" customModuleProvider="target">
+                                                        <rect key="frame" x="187" y="0.0" width="179" height="179"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="RZl-Kd-Yfj" secondAttribute="height" id="Cu4-0s-2Dc"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="오늘의 당신" cornerStyle="large"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2iZ-aa-4cs" firstAttribute="height" secondItem="7ph-g0-eCG" secondAttribute="height" id="H5I-hr-eti"/>
+                                            <constraint firstItem="hmP-dx-nRg" firstAttribute="height" secondItem="7ph-g0-eCG" secondAttribute="height" id="bav-L6-npH"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.78039215689999997" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qiR-IJ-wOC" firstAttribute="leading" secondItem="pSD-tN-dWy" secondAttribute="leading" id="IEb-Iv-OPv"/>
+                                    <constraint firstAttribute="trailing" secondItem="qiR-IJ-wOC" secondAttribute="trailing" id="bnW-gR-byc"/>
+                                    <constraint firstItem="qiR-IJ-wOC" firstAttribute="top" secondItem="pSD-tN-dWy" secondAttribute="top" id="g2T-T3-p59"/>
+                                    <constraint firstAttribute="bottom" secondItem="qiR-IJ-wOC" secondAttribute="bottom" priority="750" id="pnb-RI-nt4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Np-gr-wlm"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.7803921568627451" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pSD-tN-dWy" firstAttribute="top" secondItem="8Np-gr-wlm" secondAttribute="top" constant="24" id="A6f-18-VrN"/>
+                            <constraint firstItem="8Np-gr-wlm" firstAttribute="trailing" secondItem="pSD-tN-dWy" secondAttribute="trailing" constant="24" id="Bss-N2-ozp"/>
+                            <constraint firstItem="pSD-tN-dWy" firstAttribute="leading" secondItem="8Np-gr-wlm" secondAttribute="leading" constant="24" id="TgK-Ff-MDj"/>
+                            <constraint firstItem="8Np-gr-wlm" firstAttribute="bottom" secondItem="pSD-tN-dWy" secondAttribute="bottom" constant="24" id="saT-JL-ja8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="n7w-DL-vX3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deP-IP-mjn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10942" y="-6427"/>
+        </scene>
+        <!--남들은 뭐하지?-->
+        <scene sceneID="4b8-KX-3ER">
+            <objects>
+                <navigationController id="RXO-lM-8Vh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="남들은 뭐하지?" image="person.2" catalog="system" selectedImage="person.2.fill" id="bch-Vs-Ute"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hsp-1Z-N4U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QWN-4n-l3w" kind="relationship" relationship="rootViewController" id="trl-3p-8f6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qx4-LS-QjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11691" y="-3836"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zg2-Jc-bDo">
+            <objects>
+                <viewController id="QWN-4n-l3w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rXM-rS-iIH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4LD-OR-kGP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cV6-RY-Prf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1U-q3-qd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10942" y="-3836"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4A1-2N-Umh">
+            <objects>
+                <navigationController id="ypf-dM-u1V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="doc.text" catalog="system" selectedImage="doc.text.fill" id="hn4-iw-Q4U"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NYi-Ec-tgq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ll3-Lg-Jib" kind="relationship" relationship="rootViewController" id="0bQ-ig-25o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eue-WP-Fwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11691" y="-4480"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uj1-u6-bUm">
+            <objects>
+                <viewController id="ll3-Lg-Jib" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9er-RI-uvp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wFm-C8-9Se"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h3H-7O-3hk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcF-Ip-ZNJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10942" y="-4481"/>
+        </scene>
+        <!--캘린더-->
+        <scene sceneID="bTP-N7-jeq">
+            <objects>
+                <navigationController id="UbW-BK-Jk6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="캘린더" image="calendar" catalog="system" selectedImage="calendar" id="Hwe-iB-l6j"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eVm-Px-af3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wWy-Jm-wLc" kind="relationship" relationship="rootViewController" id="zcG-Qv-bI4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcU-nT-FZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11691" y="-5123"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jPN-d2-lkt">
+            <objects>
+                <viewController id="wWy-Jm-wLc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W5f-No-ljj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pMG-Ny-ea8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eAR-0f-3qM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Muf-sx-8Xk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10942" y="-5123"/>
+        </scene>
+        <!--할 일-->
+        <scene sceneID="jgq-Hl-viL">
+            <objects>
+                <navigationController id="Yry-vW-a4A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="할 일" image="checkmark.square" catalog="system" selectedImage="checkmark.square.fill" id="6jR-09-296"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zDw-6E-2jk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xle-lB-FS9" kind="relationship" relationship="rootViewController" id="ood-nW-fus"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJ4-nK-x7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11691" y="-5773"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2Qd-KN-bum">
+            <objects>
+                <viewController id="Xle-lB-FS9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="StO-PV-4YT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MYm-rH-T1Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yyp-Om-DBS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffY-z4-6kw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10942" y="-5774"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="RZl-Kd-Yfj">
+            <size key="intrinsicContentSize" width="88.5" height="31"/>
+        </designable>
+        <designable name="YTB-cc-7Ua">
+            <size key="intrinsicContentSize" width="48.5" height="31"/>
+        </designable>
+        <designable name="Zsk-wT-Bdm">
+            <size key="intrinsicContentSize" width="100.5" height="31"/>
+        </designable>
+        <designable name="foC-0d-1BG">
+            <size key="intrinsicContentSize" width="100.5" height="31"/>
+        </designable>
+        <designable name="hOc-n4-Qao">
+            <size key="intrinsicContentSize" width="96" height="31"/>
+        </designable>
+        <designable name="hdI-mh-Dgv">
+            <size key="intrinsicContentSize" width="113" height="31"/>
+        </designable>
+        <designable name="mZh-tx-4HD">
+            <size key="intrinsicContentSize" width="116.5" height="31"/>
+        </designable>
+    </designables>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
-        <image name="megazine.fill" width="128" height="128"/>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="doc.text.fill" catalog="system" width="115" height="128"/>
+        <image name="menucard" catalog="system" width="107" height="128"/>
+        <image name="menucard.fill" catalog="system" width="106" height="128"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

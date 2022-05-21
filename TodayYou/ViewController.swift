@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    //navigationItem.leftBarButtonItem = UIBarButtonItem(title: "5월 22일의 너", style: .plain, target: self, action: none)
     // Do any additional setup after loading the view.
   }
 
