@@ -21,8 +21,14 @@
 		86A4BE3928466F0100555B6D /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE3828466F0100555B6D /* ToDoViewController.swift */; };
 		86A4BE3E284760C000555B6D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 86A4BE3D284760C000555B6D /* SnapKit */; };
 		86A4BE4428476B6F00555B6D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE4328476B6F00555B6D /* MyPageViewController.swift */; };
-		86A4BE4828476FEA00555B6D /* ToDoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE4728476FEA00555B6D /* ToDoCollectionViewCell.swift */; };
+		86A4BE4A2847D98900555B6D /* HowYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE492847D98900555B6D /* HowYouViewController.swift */; };
+		86A4BE4E2847EEE200555B6D /* HowYouCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE4D2847EEE200555B6D /* HowYouCollectionViewCell.swift */; };
+		86A4BE502847FEB100555B6D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE4F2847FEB100555B6D /* Task.swift */; };
 		86E13BC728396B24003C4C92 /* RoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E13BC628396B23003C4C92 /* RoundCornerButton.swift */; };
+		86F66751284805170082E8C6 /* AddCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F66750284805170082E8C6 /* AddCalendarCollectionViewCell.swift */; };
+		86F66753284805620082E8C6 /* UpcomingCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F66752284805620082E8C6 /* UpcomingCalendarCollectionViewCell.swift */; };
+		86F66755284805E30082E8C6 /* MpToDoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F66754284805E30082E8C6 /* MpToDoCollectionViewCell.swift */; };
+		86F66757284806220082E8C6 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F66756284806220082E8C6 /* WeatherCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,8 +60,14 @@
 		86A4BE362846699400555B6D /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailViewController.swift; sourceTree = "<group>"; };
 		86A4BE3828466F0100555B6D /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		86A4BE4328476B6F00555B6D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
-		86A4BE4728476FEA00555B6D /* ToDoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCollectionViewCell.swift; sourceTree = "<group>"; };
+		86A4BE492847D98900555B6D /* HowYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowYouViewController.swift; sourceTree = "<group>"; };
+		86A4BE4D2847EEE200555B6D /* HowYouCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowYouCollectionViewCell.swift; sourceTree = "<group>"; };
+		86A4BE4F2847FEB100555B6D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		86E13BC628396B23003C4C92 /* RoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerButton.swift; sourceTree = "<group>"; };
+		86F66750284805170082E8C6 /* AddCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		86F66752284805620082E8C6 /* UpcomingCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		86F66754284805E30082E8C6 /* MpToDoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MpToDoCollectionViewCell.swift; sourceTree = "<group>"; };
+		86F66756284806220082E8C6 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,15 +108,21 @@
 				860D457427F98DDF00EEFFA1 /* Assets.xcassets */,
 				860D457627F98DDF00EEFFA1 /* LaunchScreen.storyboard */,
 				860D457927F98DDF00EEFFA1 /* Info.plist */,
+				86A4BE4328476B6F00555B6D /* MyPageViewController.swift */,
 				86E13BC628396B23003C4C92 /* RoundCornerButton.swift */,
-				86A4BE3828466F0100555B6D /* ToDoViewController.swift */,
 				86A4BE342846604900555B6D /* Diary.swift */,
 				86718B0827FE37660027A805 /* DiaryViewController.swift */,
 				86A4BE30284655A500555B6D /* DiaryCell.swift */,
 				86A4BE3228465B1E00555B6D /* WriteDiaryViewController.swift */,
 				86A4BE362846699400555B6D /* DiaryDetailViewController.swift */,
-				86A4BE4328476B6F00555B6D /* MyPageViewController.swift */,
-				86A4BE4728476FEA00555B6D /* ToDoCollectionViewCell.swift */,
+				86A4BE3828466F0100555B6D /* ToDoViewController.swift */,
+				86A4BE4F2847FEB100555B6D /* Task.swift */,
+				86A4BE492847D98900555B6D /* HowYouViewController.swift */,
+				86A4BE4D2847EEE200555B6D /* HowYouCollectionViewCell.swift */,
+				86F66750284805170082E8C6 /* AddCalendarCollectionViewCell.swift */,
+				86F66752284805620082E8C6 /* UpcomingCalendarCollectionViewCell.swift */,
+				86F66754284805E30082E8C6 /* MpToDoCollectionViewCell.swift */,
+				86F66756284806220082E8C6 /* WeatherCollectionViewCell.swift */,
 			);
 			path = TodayYou;
 			sourceTree = "<group>";
@@ -190,14 +208,20 @@
 				86A4BE3928466F0100555B6D /* ToDoViewController.swift in Sources */,
 				86718B0927FE37660027A805 /* DiaryViewController.swift in Sources */,
 				86A4BE372846699400555B6D /* DiaryDetailViewController.swift in Sources */,
-				86A4BE4828476FEA00555B6D /* ToDoCollectionViewCell.swift in Sources */,
+				86A4BE4E2847EEE200555B6D /* HowYouCollectionViewCell.swift in Sources */,
 				86A4BE31284655A500555B6D /* DiaryCell.swift in Sources */,
 				860D457027F98DDE00EEFFA1 /* ViewController.swift in Sources */,
+				86F66753284805620082E8C6 /* UpcomingCalendarCollectionViewCell.swift in Sources */,
 				860D456C27F98DDE00EEFFA1 /* AppDelegate.swift in Sources */,
 				86A4BE4428476B6F00555B6D /* MyPageViewController.swift in Sources */,
+				86F66757284806220082E8C6 /* WeatherCollectionViewCell.swift in Sources */,
 				86A4BE3328465B1E00555B6D /* WriteDiaryViewController.swift in Sources */,
+				86A4BE4A2847D98900555B6D /* HowYouViewController.swift in Sources */,
+				86F66755284805E30082E8C6 /* MpToDoCollectionViewCell.swift in Sources */,
+				86F66751284805170082E8C6 /* AddCalendarCollectionViewCell.swift in Sources */,
 				86A4BE352846604900555B6D /* Diary.swift in Sources */,
 				86E13BC728396B24003C4C92 /* RoundCornerButton.swift in Sources */,
+				86A4BE502847FEB100555B6D /* Task.swift in Sources */,
 				860D456E27F98DDE00EEFFA1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

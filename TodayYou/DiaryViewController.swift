@@ -107,7 +107,7 @@ class DiaryViewController: UIViewController {
       return Diary(uuidString: uuidString, title: title, contents: contents, date: date, isStar: isStar)
     }
     self.diaryList = self.diaryList.sorted(by: {
-      $0.date.compare($1.date) == .orderedAscending
+      $0.date.compare($1.date) == .orderedDescending
     })
   }
 
