@@ -17,6 +17,8 @@
 		86A4BE31284655A500555B6D /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE30284655A500555B6D /* DiaryCell.swift */; };
 		86A4BE3328465B1E00555B6D /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE3228465B1E00555B6D /* WriteDiaryViewController.swift */; };
 		86A4BE352846604900555B6D /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE342846604900555B6D /* Diary.swift */; };
+		86A4BE372846699400555B6D /* DiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE362846699400555B6D /* DiaryDetailViewController.swift */; };
+		86A4BE3928466F0100555B6D /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE3828466F0100555B6D /* ToDoViewController.swift */; };
 		86CAD9312839570C00FABF56 /* MyPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CAD9302839570C00FABF56 /* MyPageController.swift */; };
 		86E13BC728396B24003C4C92 /* RoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E13BC628396B23003C4C92 /* RoundCornerButton.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		86A4BE30284655A500555B6D /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
 		86A4BE3228465B1E00555B6D /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
 		86A4BE342846604900555B6D /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
+		86A4BE362846699400555B6D /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailViewController.swift; sourceTree = "<group>"; };
+		86A4BE3828466F0100555B6D /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		86CAD9302839570C00FABF56 /* MyPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageController.swift; sourceTree = "<group>"; };
 		86E13BC628396B23003C4C92 /* RoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,12 +79,14 @@
 				860D457427F98DDF00EEFFA1 /* Assets.xcassets */,
 				860D457627F98DDF00EEFFA1 /* LaunchScreen.storyboard */,
 				860D457927F98DDF00EEFFA1 /* Info.plist */,
-				86718B0827FE37660027A805 /* DiaryViewController.swift */,
 				86CAD9302839570C00FABF56 /* MyPageController.swift */,
 				86E13BC628396B23003C4C92 /* RoundCornerButton.swift */,
+				86A4BE3828466F0100555B6D /* ToDoViewController.swift */,
+				86A4BE342846604900555B6D /* Diary.swift */,
+				86718B0827FE37660027A805 /* DiaryViewController.swift */,
 				86A4BE30284655A500555B6D /* DiaryCell.swift */,
 				86A4BE3228465B1E00555B6D /* WriteDiaryViewController.swift */,
-				86A4BE342846604900555B6D /* Diary.swift */,
+				86A4BE362846699400555B6D /* DiaryDetailViewController.swift */,
 			);
 			path = TodayYou;
 			sourceTree = "<group>";
@@ -156,7 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A4BE3928466F0100555B6D /* ToDoViewController.swift in Sources */,
 				86718B0927FE37660027A805 /* DiaryViewController.swift in Sources */,
+				86A4BE372846699400555B6D /* DiaryDetailViewController.swift in Sources */,
 				86A4BE31284655A500555B6D /* DiaryCell.swift in Sources */,
 				860D457027F98DDE00EEFFA1 /* ViewController.swift in Sources */,
 				860D456C27F98DDE00EEFFA1 /* AppDelegate.swift in Sources */,

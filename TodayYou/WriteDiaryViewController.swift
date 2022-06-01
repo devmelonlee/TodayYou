@@ -94,7 +94,7 @@ class WriteDiaryViewController: UIViewController {
       )
       self.delegate?.didSelectReigster(diary: diary)
 
-    case let .edit(indxPath, diary):
+    case let .edit(_, diary):
       let diary = Diary(
         uuidString: diary.uuidString,
         title: title,
@@ -110,6 +110,10 @@ class WriteDiaryViewController: UIViewController {
     }
     self.navigationController?.popViewController(animated: true)
   }
+    
+  
+  //@IBAction func tapConfirmButton(_ sender: UIBarButtonItem) {
+    
 
   @objc private func datePickerValueDidChange(_ datePicker: UIDatePicker) {
     let formmater = DateFormatter()

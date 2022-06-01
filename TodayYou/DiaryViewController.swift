@@ -27,12 +27,13 @@ class DiaryViewController: UIViewController {
       name: NSNotification.Name("editDiary"),
       object: nil
     )
+    /*
     NotificationCenter.default.addObserver(
       self,
       selector: #selector(starDiaryNotification(_:)),
       name: NSNotification.Name("starDiary"),
       object: nil
-    )
+    )*/
     NotificationCenter.default.addObserver(
       self,
       selector: #selector(deleteDiaryNotification(_:)),
@@ -53,18 +54,18 @@ class DiaryViewController: UIViewController {
     guard let index = self.diaryList.firstIndex(where: { $0.uuidString == diary.uuidString }) else { return }
     self.diaryList[index] = diary
     self.diaryList = self.diaryList.sorted(by: {
-      $0.date.compare($1.date) == .orderedAscending
+      $0.date.compare($1.date) == .orderedAscending //날짜 오름차순 정렬
     })
-    self.collectionView.reloadData()
+    self.collectionView.reloadData() // 수정된 내용 전달
   }
-
+  /*
   @objc func starDiaryNotification(_ notification: Notification) {
     guard let starDiary = notification.object as? [String: Any] else { return }
     guard let isStar = starDiary["isStar"] as? Bool else { return }
     guard let uuidString = starDiary["uuidString"] as? String else { return }
     guard let index = self.diaryList.firstIndex(where: { $0.uuidString == uuidString }) else { return }
     self.diaryList[index].isStar = isStar
-  }
+  }*/
 
   @objc func deleteDiaryNotification(_ notification: Notification) {
     guard let uuidString = notification.object as? String else { return }
@@ -74,8 +75,8 @@ class DiaryViewController: UIViewController {
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let wireDiaryViewContoller = segue.destination as? WriteDiaryViewController {
-      wireDiaryViewContoller.delegate = self
+    if let writeDiaryViewContoller = segue.destination as? WriteDiaryViewController {
+      writeDiaryViewContoller.delegate = self
     }
   }
 
@@ -117,37 +118,58 @@ class DiaryViewController: UIViewController {
   }
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension DiaryViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return self.diaryList.count
   }
 
-  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { // 셀의 정보
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DiaryCell", for: indexPath) as? DiaryCell else { return UICollectionViewCell() }
     let diary = self.diaryList[indexPath.row]
     cell.titleLabel.text = diary.title
     cell.dateLabel.text = self.dateToString(date: diary.date)
+    
+    cell.backgroundColor = .white // 배경
+    cell.layer.cornerRadius = 20
+    cell.layer.masksToBounds = true
+    
+    /*
+    cell.layer.shadowColor = UIColor.gray.cgColor
+    cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+    cell.layer.shadowRadius = 20.0
+    cell.layer.shadowOpacity = 20.0
+    */
     return cell
   }
 }
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension DiaryViewController: UICollectionViewDelegateFlowLayout {
+  // 위 아래 간격
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    return 10
+  }
+
+  // 옆 간격
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    return 5
+  }
+
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return CGSize(width: (UIScreen.main.bounds.width / 2) - 20, height: 200)
+    return CGSize(width: (UIScreen.main.bounds.width / 2) - 20, height: 150)
   }
 }
 
-extension ViewController: UICollectionViewDelegate {
+extension DiaryViewController: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    guard let viewContoller = self.storyboard?.instantiateViewController(identifier: "DiaryDetailViewController") as? DiaryDetailViewController else { return }
+    guard let DiaryViewContoller = self.storyboard?.instantiateViewController(identifier: "DiaryDetailViewController") as? DiaryDetailViewController else { return }
     let diary = self.diaryList[indexPath.row]
-    viewContoller.diary = diary
-    viewContoller.indexPath = indexPath
-    self.navigationController?.pushViewController(viewContoller, animated: true)
+    DiaryViewContoller.diary = diary
+    DiaryViewContoller.indexPath = indexPath
+    self.navigationController?.pushViewController(DiaryViewContoller, animated: true)
   }
 }
 
-extension ViewController: WriteDiaryViewDelegate {
+extension DiaryViewController: WriteDiaryViewDelegate {
   func didSelectReigster(diary: Diary) {
     self.diaryList.append(diary)
     self.diaryList = self.diaryList.sorted(by: {
