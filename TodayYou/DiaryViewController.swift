@@ -4,7 +4,7 @@
 //
 //  Created by 이승혁 on 2022/04/07.
 //
-
+import SnapKit
 import UIKit
 
 class DiaryViewController: UIViewController {
@@ -19,6 +19,7 @@ class DiaryViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    //self.title = "일기"
     self.configureCollectionView()
     self.loadDiaryList()
     NotificationCenter.default.addObserver(
@@ -126,19 +127,15 @@ extension DiaryViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { // 셀의 정보
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DiaryCell", for: indexPath) as? DiaryCell else { return UICollectionViewCell() }
     let diary = self.diaryList[indexPath.row]
+    cell.setup() //
+    
     cell.titleLabel.text = diary.title
     cell.dateLabel.text = self.dateToString(date: diary.date)
     
-    cell.backgroundColor = .white // 배경
-    cell.layer.cornerRadius = 20
-    cell.layer.masksToBounds = true
     
-    /*
-    cell.layer.shadowColor = UIColor.gray.cgColor
-    cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-    cell.layer.shadowRadius = 20.0
-    cell.layer.shadowOpacity = 20.0
-    */
+    
+    
+    
     return cell
   }
 }

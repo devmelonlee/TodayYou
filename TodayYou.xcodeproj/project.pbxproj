@@ -19,9 +19,24 @@
 		86A4BE352846604900555B6D /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE342846604900555B6D /* Diary.swift */; };
 		86A4BE372846699400555B6D /* DiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE362846699400555B6D /* DiaryDetailViewController.swift */; };
 		86A4BE3928466F0100555B6D /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE3828466F0100555B6D /* ToDoViewController.swift */; };
-		86CAD9312839570C00FABF56 /* MyPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CAD9302839570C00FABF56 /* MyPageController.swift */; };
+		86A4BE3E284760C000555B6D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 86A4BE3D284760C000555B6D /* SnapKit */; };
+		86A4BE4428476B6F00555B6D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE4328476B6F00555B6D /* MyPageViewController.swift */; };
+		86A4BE4828476FEA00555B6D /* ToDoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE4728476FEA00555B6D /* ToDoCollectionViewCell.swift */; };
 		86E13BC728396B24003C4C92 /* RoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E13BC628396B23003C4C92 /* RoundCornerButton.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86A4BE422847626800555B6D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		860D456827F98DDE00EEFFA1 /* TodayYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +53,8 @@
 		86A4BE342846604900555B6D /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		86A4BE362846699400555B6D /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailViewController.swift; sourceTree = "<group>"; };
 		86A4BE3828466F0100555B6D /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
-		86CAD9302839570C00FABF56 /* MyPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageController.swift; sourceTree = "<group>"; };
+		86A4BE4328476B6F00555B6D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		86A4BE4728476FEA00555B6D /* ToDoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCollectionViewCell.swift; sourceTree = "<group>"; };
 		86E13BC628396B23003C4C92 /* RoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A4BE3E284760C000555B6D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +96,6 @@
 				860D457427F98DDF00EEFFA1 /* Assets.xcassets */,
 				860D457627F98DDF00EEFFA1 /* LaunchScreen.storyboard */,
 				860D457927F98DDF00EEFFA1 /* Info.plist */,
-				86CAD9302839570C00FABF56 /* MyPageController.swift */,
 				86E13BC628396B23003C4C92 /* RoundCornerButton.swift */,
 				86A4BE3828466F0100555B6D /* ToDoViewController.swift */,
 				86A4BE342846604900555B6D /* Diary.swift */,
@@ -87,6 +103,8 @@
 				86A4BE30284655A500555B6D /* DiaryCell.swift */,
 				86A4BE3228465B1E00555B6D /* WriteDiaryViewController.swift */,
 				86A4BE362846699400555B6D /* DiaryDetailViewController.swift */,
+				86A4BE4328476B6F00555B6D /* MyPageViewController.swift */,
+				86A4BE4728476FEA00555B6D /* ToDoCollectionViewCell.swift */,
 			);
 			path = TodayYou;
 			sourceTree = "<group>";
@@ -101,12 +119,16 @@
 				860D456427F98DDE00EEFFA1 /* Sources */,
 				860D456527F98DDE00EEFFA1 /* Frameworks */,
 				860D456627F98DDE00EEFFA1 /* Resources */,
+				86A4BE422847626800555B6D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TodayYou;
+			packageProductDependencies = (
+				86A4BE3D284760C000555B6D /* SnapKit */,
+			);
 			productName = TodayYou;
 			productReference = 860D456827F98DDE00EEFFA1 /* TodayYou.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 860D455F27F98DDE00EEFFA1;
+			packageReferences = (
+				86A4BE3C284760C000555B6D /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 860D456927F98DDE00EEFFA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -165,14 +190,15 @@
 				86A4BE3928466F0100555B6D /* ToDoViewController.swift in Sources */,
 				86718B0927FE37660027A805 /* DiaryViewController.swift in Sources */,
 				86A4BE372846699400555B6D /* DiaryDetailViewController.swift in Sources */,
+				86A4BE4828476FEA00555B6D /* ToDoCollectionViewCell.swift in Sources */,
 				86A4BE31284655A500555B6D /* DiaryCell.swift in Sources */,
 				860D457027F98DDE00EEFFA1 /* ViewController.swift in Sources */,
 				860D456C27F98DDE00EEFFA1 /* AppDelegate.swift in Sources */,
+				86A4BE4428476B6F00555B6D /* MyPageViewController.swift in Sources */,
 				86A4BE3328465B1E00555B6D /* WriteDiaryViewController.swift in Sources */,
 				86A4BE352846604900555B6D /* Diary.swift in Sources */,
 				86E13BC728396B24003C4C92 /* RoundCornerButton.swift in Sources */,
 				860D456E27F98DDE00EEFFA1 /* SceneDelegate.swift in Sources */,
-				86CAD9312839570C00FABF56 /* MyPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86A4BE3C284760C000555B6D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86A4BE3D284760C000555B6D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86A4BE3C284760C000555B6D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 860D456027F98DDE00EEFFA1 /* Project object */;
 }

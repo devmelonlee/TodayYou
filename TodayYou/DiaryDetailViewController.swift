@@ -4,7 +4,7 @@
 //
 //  Created by 이승혁 on 2022/06/01.
 //
-
+import SnapKit
 import UIKit
 
 class DiaryDetailViewController: UIViewController {

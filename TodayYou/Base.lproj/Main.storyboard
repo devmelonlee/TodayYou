@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="-11691" y="-6426"/>
         </scene>
-        <!--View Controller-->
+        <!--My Page View Controller-->
         <scene sceneID="5k1-G3-8P4">
             <objects>
-                <viewController id="GGH-9C-24F" sceneMemberID="viewController">
+                <viewController id="GGH-9C-24F" customClass="MyPageViewController" customModule="TodayYou" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RTn-5w-vHc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -409,21 +409,21 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="b9c-En-5Ib">
-                                <rect key="frame" x="121.66666666666667" y="477.66666666666669" width="146.66666666666663" height="31"/>
+                                <rect key="frame" x="97.333333333333329" y="477.66666666666669" width="195.33333333333337" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIl-fl-ZMq">
-                                        <rect key="frame" x="0.0" y="0.0" width="48.333333333333336" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="72.666666666666671" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="수정" cornerStyle="capsule"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="수정하기" cornerStyle="capsule"/>
                                         <connections>
                                             <action selector="tapEditButton:" destination="GZe-ol-Pli" eventType="touchUpInside" id="PBT-A6-BDc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5T-2V-kkL">
-                                        <rect key="frame" x="98.333333333333329" y="0.0" width="48.333333333333329" height="31"/>
+                                        <rect key="frame" x="122.66666666666666" y="0.0" width="72.666666666666657" height="31"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="삭제" cornerStyle="capsule"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="삭제하기" cornerStyle="capsule"/>
                                         <connections>
                                             <action selector="tapDeleteButton:" destination="GZe-ol-Pli" eventType="touchUpInside" id="bog-ez-F8v"/>
                                         </connections>
@@ -514,32 +514,6 @@
                     <view key="view" contentMode="scaleToFill" id="StO-PV-4YT">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oWt-9L-PNI">
-                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="hne-EE-M7k" style="IBUITableViewCellStyleDefault" id="WRn-4k-lqi">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WRn-4k-lqi" id="PdY-ya-ejU">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hne-EE-M7k">
-                                                    <rect key="frame" x="20" y="0.0" width="350" height="43.666667938232422"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="MYm-rH-T1Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
