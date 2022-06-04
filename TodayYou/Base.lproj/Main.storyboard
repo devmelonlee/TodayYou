@@ -3,7 +3,6 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -17,9 +16,10 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B3a-ad-w8R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="AccentColor"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                        <color key="barTintColor" systemColor="systemBrownColor"/>
+                        <tabBarAppearance key="standardAppearance"/>
                     </tabBar>
                     <connections>
                         <segue destination="LUP-PB-tLC" kind="relationship" relationship="viewControllers" id="IlQ-Ik-thH"/>
@@ -107,13 +107,13 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="8Np-gr-wlm"/>
+                        <viewLayoutGuide key="safeArea" id="9xZ-HH-znz"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.7803921568627451" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="c6l-aV-qUb" firstAttribute="top" secondItem="8Np-gr-wlm" secondAttribute="top" id="hdH-KC-REH"/>
-                            <constraint firstItem="c6l-aV-qUb" firstAttribute="leading" secondItem="8Np-gr-wlm" secondAttribute="leading" id="icx-qq-x49"/>
-                            <constraint firstItem="8Np-gr-wlm" firstAttribute="trailing" secondItem="c6l-aV-qUb" secondAttribute="trailing" id="uZW-Pn-56Z"/>
-                            <constraint firstItem="8Np-gr-wlm" firstAttribute="bottom" secondItem="c6l-aV-qUb" secondAttribute="bottom" id="zdj-Ne-r4a"/>
+                            <constraint firstItem="c6l-aV-qUb" firstAttribute="top" secondItem="9xZ-HH-znz" secondAttribute="top" id="hdH-KC-REH"/>
+                            <constraint firstItem="c6l-aV-qUb" firstAttribute="leading" secondItem="9xZ-HH-znz" secondAttribute="leading" id="icx-qq-x49"/>
+                            <constraint firstItem="9xZ-HH-znz" firstAttribute="trailing" secondItem="c6l-aV-qUb" secondAttribute="trailing" id="uZW-Pn-56Z"/>
+                            <constraint firstItem="9xZ-HH-znz" firstAttribute="bottom" secondItem="c6l-aV-qUb" secondAttribute="bottom" id="zdj-Ne-r4a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="마이 페이지" largeTitleDisplayMode="always" id="n7w-DL-vX3"/>
@@ -146,7 +146,7 @@
                     <view key="view" contentMode="scaleToFill" id="rXM-rS-iIH" customClass="HowYouViewContoller" customModule="TodayYou" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4LD-OR-kGP"/>
+                        <viewLayoutGuide key="safeArea" id="KZu-ba-8HE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="지금 뭐해?" id="cV6-RY-Prf">
@@ -232,13 +232,13 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="wFm-C8-9Se"/>
+                        <viewLayoutGuide key="safeArea" id="Nkv-OV-6lT"/>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.78039215689999997" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wFm-C8-9Se" firstAttribute="trailing" secondItem="xzw-lA-CtC" secondAttribute="trailing" id="2HE-yW-ZR2"/>
-                            <constraint firstItem="xzw-lA-CtC" firstAttribute="top" secondItem="wFm-C8-9Se" secondAttribute="top" id="9WF-kR-8P7"/>
-                            <constraint firstItem="xzw-lA-CtC" firstAttribute="leading" secondItem="wFm-C8-9Se" secondAttribute="leading" id="Qm2-S8-qlo"/>
-                            <constraint firstItem="wFm-C8-9Se" firstAttribute="bottom" secondItem="xzw-lA-CtC" secondAttribute="bottom" id="W9Y-Hh-tt5"/>
+                            <constraint firstItem="Nkv-OV-6lT" firstAttribute="trailing" secondItem="xzw-lA-CtC" secondAttribute="trailing" id="2HE-yW-ZR2"/>
+                            <constraint firstItem="xzw-lA-CtC" firstAttribute="top" secondItem="Nkv-OV-6lT" secondAttribute="top" id="9WF-kR-8P7"/>
+                            <constraint firstItem="xzw-lA-CtC" firstAttribute="leading" secondItem="Nkv-OV-6lT" secondAttribute="leading" id="Qm2-S8-qlo"/>
+                            <constraint firstItem="Nkv-OV-6lT" firstAttribute="bottom" secondItem="xzw-lA-CtC" secondAttribute="bottom" id="W9Y-Hh-tt5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="일기장" id="h3H-7O-3hk">
@@ -303,27 +303,27 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="5bg-nF-eFu"/>
+                        <viewLayoutGuide key="safeArea" id="802-BS-viP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nNF-gR-rKZ" firstAttribute="leading" secondItem="5bg-nF-eFu" secondAttribute="leading" constant="24" id="2XS-ee-aCP"/>
-                            <constraint firstItem="5bg-nF-eFu" firstAttribute="trailing" secondItem="7t2-RQ-1MN" secondAttribute="trailing" constant="24" id="48j-sz-zVy"/>
-                            <constraint firstItem="7t2-RQ-1MN" firstAttribute="leading" secondItem="5bg-nF-eFu" secondAttribute="leading" constant="24" id="6lc-eP-GcA"/>
-                            <constraint firstItem="8ow-0s-WcH" firstAttribute="top" secondItem="5bg-nF-eFu" secondAttribute="top" constant="24" id="8we-Ba-JMT"/>
+                            <constraint firstItem="nNF-gR-rKZ" firstAttribute="leading" secondItem="802-BS-viP" secondAttribute="leading" constant="24" id="2XS-ee-aCP"/>
+                            <constraint firstItem="802-BS-viP" firstAttribute="trailing" secondItem="7t2-RQ-1MN" secondAttribute="trailing" constant="24" id="48j-sz-zVy"/>
+                            <constraint firstItem="7t2-RQ-1MN" firstAttribute="leading" secondItem="802-BS-viP" secondAttribute="leading" constant="24" id="6lc-eP-GcA"/>
+                            <constraint firstItem="8ow-0s-WcH" firstAttribute="top" secondItem="802-BS-viP" secondAttribute="top" constant="24" id="8we-Ba-JMT"/>
                             <constraint firstItem="Z1N-dN-Sql" firstAttribute="top" secondItem="8ow-0s-WcH" secondAttribute="bottom" constant="12" id="IKY-Zf-9nJ"/>
-                            <constraint firstItem="5bg-nF-eFu" firstAttribute="trailing" secondItem="nNF-gR-rKZ" secondAttribute="trailing" constant="24" id="InO-zu-jYu"/>
+                            <constraint firstItem="802-BS-viP" firstAttribute="trailing" secondItem="nNF-gR-rKZ" secondAttribute="trailing" constant="24" id="InO-zu-jYu"/>
                             <constraint firstItem="7t2-RQ-1MN" firstAttribute="top" secondItem="lXn-Or-X1f" secondAttribute="bottom" constant="12" id="K4H-MA-cXI"/>
-                            <constraint firstItem="Z1N-dN-Sql" firstAttribute="leading" secondItem="5bg-nF-eFu" secondAttribute="leading" constant="24" id="MdG-aq-ADf"/>
+                            <constraint firstItem="Z1N-dN-Sql" firstAttribute="leading" secondItem="802-BS-viP" secondAttribute="leading" constant="24" id="MdG-aq-ADf"/>
                             <constraint firstItem="nNF-gR-rKZ" firstAttribute="top" secondItem="7t2-RQ-1MN" secondAttribute="bottom" constant="24" id="Msi-Q0-biv"/>
                             <constraint firstItem="lXn-Or-X1f" firstAttribute="top" secondItem="Z1N-dN-Sql" secondAttribute="bottom" constant="24" id="QHk-Da-NWf"/>
-                            <constraint firstItem="5bg-nF-eFu" firstAttribute="trailing" secondItem="rGB-H2-gQC" secondAttribute="trailing" constant="24" id="RJq-Le-0vN"/>
-                            <constraint firstItem="8ow-0s-WcH" firstAttribute="leading" secondItem="5bg-nF-eFu" secondAttribute="leading" constant="24" id="UPO-E4-8JB"/>
-                            <constraint firstItem="rGB-H2-gQC" firstAttribute="leading" secondItem="5bg-nF-eFu" secondAttribute="leading" constant="24" id="VjO-gJ-bt5"/>
-                            <constraint firstItem="5bg-nF-eFu" firstAttribute="trailing" secondItem="8ow-0s-WcH" secondAttribute="trailing" constant="24" id="ZBe-bY-tzV"/>
-                            <constraint firstItem="5bg-nF-eFu" firstAttribute="trailing" secondItem="Z1N-dN-Sql" secondAttribute="trailing" constant="24" id="bPJ-5n-NXd"/>
-                            <constraint firstItem="5bg-nF-eFu" firstAttribute="trailing" secondItem="lXn-Or-X1f" secondAttribute="trailing" constant="24" id="gjU-HN-kaf"/>
+                            <constraint firstItem="802-BS-viP" firstAttribute="trailing" secondItem="rGB-H2-gQC" secondAttribute="trailing" constant="24" id="RJq-Le-0vN"/>
+                            <constraint firstItem="8ow-0s-WcH" firstAttribute="leading" secondItem="802-BS-viP" secondAttribute="leading" constant="24" id="UPO-E4-8JB"/>
+                            <constraint firstItem="rGB-H2-gQC" firstAttribute="leading" secondItem="802-BS-viP" secondAttribute="leading" constant="24" id="VjO-gJ-bt5"/>
+                            <constraint firstItem="802-BS-viP" firstAttribute="trailing" secondItem="8ow-0s-WcH" secondAttribute="trailing" constant="24" id="ZBe-bY-tzV"/>
+                            <constraint firstItem="802-BS-viP" firstAttribute="trailing" secondItem="Z1N-dN-Sql" secondAttribute="trailing" constant="24" id="bPJ-5n-NXd"/>
+                            <constraint firstItem="802-BS-viP" firstAttribute="trailing" secondItem="lXn-Or-X1f" secondAttribute="trailing" constant="24" id="gjU-HN-kaf"/>
                             <constraint firstItem="rGB-H2-gQC" firstAttribute="top" secondItem="nNF-gR-rKZ" secondAttribute="bottom" constant="12" id="hB1-l6-FeI"/>
-                            <constraint firstItem="lXn-Or-X1f" firstAttribute="leading" secondItem="5bg-nF-eFu" secondAttribute="leading" constant="24" id="ipH-DM-ZfY"/>
+                            <constraint firstItem="lXn-Or-X1f" firstAttribute="leading" secondItem="802-BS-viP" secondAttribute="leading" constant="24" id="ipH-DM-ZfY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="오늘의 일기 작성하기" id="tO0-4F-gde">
@@ -431,20 +431,20 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="Tmp-ZK-zg7"/>
+                        <viewLayoutGuide key="safeArea" id="cdF-ez-UCo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="b9c-En-5Ib" firstAttribute="top" secondItem="t2Z-YR-BEb" secondAttribute="bottom" constant="24" id="Byg-Sj-VMy"/>
                             <constraint firstItem="t2Z-YR-BEb" firstAttribute="top" secondItem="1cj-ma-5S1" secondAttribute="bottom" constant="24" id="DjQ-xS-xyP"/>
-                            <constraint firstItem="Sxe-cD-MgS" firstAttribute="leading" secondItem="Tmp-ZK-zg7" secondAttribute="leading" constant="24" id="J6D-NH-I4W"/>
+                            <constraint firstItem="Sxe-cD-MgS" firstAttribute="leading" secondItem="cdF-ez-UCo" secondAttribute="leading" constant="24" id="J6D-NH-I4W"/>
                             <constraint firstItem="1cj-ma-5S1" firstAttribute="top" secondItem="Sxe-cD-MgS" secondAttribute="bottom" constant="24" id="Vm2-8g-vnJ"/>
-                            <constraint firstItem="t2Z-YR-BEb" firstAttribute="leading" secondItem="Tmp-ZK-zg7" secondAttribute="leading" constant="24" id="WeS-57-cZF"/>
-                            <constraint firstItem="Tmp-ZK-zg7" firstAttribute="trailing" secondItem="t2Z-YR-BEb" secondAttribute="trailing" constant="24" id="dX6-JJ-R70"/>
+                            <constraint firstItem="t2Z-YR-BEb" firstAttribute="leading" secondItem="cdF-ez-UCo" secondAttribute="leading" constant="24" id="WeS-57-cZF"/>
+                            <constraint firstItem="cdF-ez-UCo" firstAttribute="trailing" secondItem="t2Z-YR-BEb" secondAttribute="trailing" constant="24" id="dX6-JJ-R70"/>
                             <constraint firstItem="b9c-En-5Ib" firstAttribute="centerX" secondItem="t2Z-YR-BEb" secondAttribute="centerX" id="kdM-S2-gEd"/>
-                            <constraint firstItem="Sxe-cD-MgS" firstAttribute="top" secondItem="Tmp-ZK-zg7" secondAttribute="top" constant="24" id="typ-Ew-fca"/>
-                            <constraint firstItem="Tmp-ZK-zg7" firstAttribute="trailing" secondItem="1cj-ma-5S1" secondAttribute="trailing" constant="24" id="uM6-8N-WKs"/>
-                            <constraint firstItem="1cj-ma-5S1" firstAttribute="leading" secondItem="Tmp-ZK-zg7" secondAttribute="leading" constant="24" id="vHE-nw-eph"/>
-                            <constraint firstItem="Tmp-ZK-zg7" firstAttribute="trailing" secondItem="Sxe-cD-MgS" secondAttribute="trailing" constant="24" id="yS5-9b-fLN"/>
+                            <constraint firstItem="Sxe-cD-MgS" firstAttribute="top" secondItem="cdF-ez-UCo" secondAttribute="top" constant="24" id="typ-Ew-fca"/>
+                            <constraint firstItem="cdF-ez-UCo" firstAttribute="trailing" secondItem="1cj-ma-5S1" secondAttribute="trailing" constant="24" id="uM6-8N-WKs"/>
+                            <constraint firstItem="1cj-ma-5S1" firstAttribute="leading" secondItem="cdF-ez-UCo" secondAttribute="leading" constant="24" id="vHE-nw-eph"/>
+                            <constraint firstItem="cdF-ez-UCo" firstAttribute="trailing" secondItem="Sxe-cD-MgS" secondAttribute="trailing" constant="24" id="yS5-9b-fLN"/>
                         </constraints>
                     </view>
                     <connections>
@@ -481,7 +481,7 @@
                     <view key="view" contentMode="scaleToFill" id="W5f-No-ljj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="pMG-Ny-ea8"/>
+                        <viewLayoutGuide key="safeArea" id="WrT-1i-ThT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="캘린더" id="eAR-0f-3qM"/>
@@ -539,13 +539,14 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="MYm-rH-T1Y"/>
+                        <viewLayoutGuide key="safeArea" id="7Sy-ST-TyX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="wDT-xN-Y4y" firstAttribute="leading" secondItem="MYm-rH-T1Y" secondAttribute="leading" id="ZWH-Wt-pQM"/>
-                            <constraint firstItem="MYm-rH-T1Y" firstAttribute="trailing" secondItem="wDT-xN-Y4y" secondAttribute="trailing" id="hKu-hH-nzY"/>
-                            <constraint firstItem="wDT-xN-Y4y" firstAttribute="top" secondItem="MYm-rH-T1Y" secondAttribute="top" id="ofQ-Hr-BQL"/>
-                            <constraint firstItem="MYm-rH-T1Y" firstAttribute="bottom" secondItem="wDT-xN-Y4y" secondAttribute="bottom" id="rKr-yo-vvW"/>
+                            <constraint firstItem="wDT-xN-Y4y" firstAttribute="leading" secondItem="7Sy-ST-TyX" secondAttribute="leading" id="ZWH-Wt-pQM"/>
+                            <constraint firstItem="7Sy-ST-TyX" firstAttribute="trailing" secondItem="wDT-xN-Y4y" secondAttribute="trailing" id="hKu-hH-nzY"/>
+                            <constraint firstItem="wDT-xN-Y4y" firstAttribute="top" secondItem="7Sy-ST-TyX" secondAttribute="top" id="ofQ-Hr-BQL"/>
+                            <constraint firstItem="7Sy-ST-TyX" firstAttribute="bottom" secondItem="wDT-xN-Y4y" secondAttribute="bottom" id="rKr-yo-vvW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="할 일" id="yyp-Om-DBS">
@@ -570,6 +571,7 @@
             <point key="canvasLocation" x="-10942" y="-5774"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
@@ -582,14 +584,20 @@
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
