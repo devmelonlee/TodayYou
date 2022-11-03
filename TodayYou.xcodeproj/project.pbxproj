@@ -13,7 +13,12 @@
 		860D457327F98DDE00EEFFA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860D457127F98DDE00EEFFA1 /* Main.storyboard */; };
 		860D457527F98DDF00EEFFA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860D457427F98DDF00EEFFA1 /* Assets.xcassets */; };
 		860D457827F98DDF00EEFFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860D457627F98DDF00EEFFA1 /* LaunchScreen.storyboard */; };
+		86499AB528F78DC300E3369B /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86499AB428F78DC300E3369B /* DatePickerController.swift */; };
+		86499AB728F78E7A00E3369B /* CustomCalendarExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86499AB628F78E7A00E3369B /* CustomCalendarExampleController.swift */; };
+		865F61C228E530A100470CD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 865F61C128E530A100470CD3 /* GoogleService-Info.plist */; };
 		86718B0927FE37660027A805 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86718B0827FE37660027A805 /* DiaryViewController.swift */; };
+		86816C55291319610006CE69 /* MyPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86816C54291319610006CE69 /* MyPageCell.swift */; };
+		8696646C28F7547C008345D0 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8696646B28F7547C008345D0 /* CalendarKit */; };
 		86A4BE31284655A500555B6D /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE30284655A500555B6D /* DiaryCell.swift */; };
 		86A4BE3328465B1E00555B6D /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE3228465B1E00555B6D /* WriteDiaryViewController.swift */; };
 		86A4BE352846604900555B6D /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4BE342846604900555B6D /* Diary.swift */; };
@@ -53,7 +58,11 @@
 		860D457427F98DDF00EEFFA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		860D457727F98DDF00EEFFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		860D457927F98DDF00EEFFA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86499AB428F78DC300E3369B /* DatePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerController.swift; sourceTree = "<group>"; };
+		86499AB628F78E7A00E3369B /* CustomCalendarExampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarExampleController.swift; sourceTree = "<group>"; };
+		865F61C128E530A100470CD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		86718B0827FE37660027A805 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		86816C54291319610006CE69 /* MyPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCell.swift; sourceTree = "<group>"; };
 		86A4BE30284655A500555B6D /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
 		86A4BE3228465B1E00555B6D /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
 		86A4BE342846604900555B6D /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
@@ -76,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A4BE3E284760C000555B6D /* SnapKit in Frameworks */,
+				8696646C28F7547C008345D0 /* CalendarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +111,7 @@
 		860D456A27F98DDE00EEFFA1 /* TodayYou */ = {
 			isa = PBXGroup;
 			children = (
+				865F61C128E530A100470CD3 /* GoogleService-Info.plist */,
 				860D456B27F98DDE00EEFFA1 /* AppDelegate.swift */,
 				860D456D27F98DDE00EEFFA1 /* SceneDelegate.swift */,
 				860D456F27F98DDE00EEFFA1 /* ViewController.swift */,
@@ -108,23 +119,50 @@
 				860D457427F98DDF00EEFFA1 /* Assets.xcassets */,
 				860D457627F98DDF00EEFFA1 /* LaunchScreen.storyboard */,
 				860D457927F98DDF00EEFFA1 /* Info.plist */,
-				86A4BE4328476B6F00555B6D /* MyPageViewController.swift */,
 				86E13BC628396B23003C4C92 /* RoundCornerButton.swift */,
+				868C7A2128F7539900B7D4E9 /* MyPage */,
+				868C7A1F28F7530300B7D4E9 /* Diary */,
+				868C7A2028F7533A00B7D4E9 /* ToDo */,
+				86A4BE492847D98900555B6D /* HowYouViewController.swift */,
+				86A4BE4D2847EEE200555B6D /* HowYouCollectionViewCell.swift */,
+				86499AB428F78DC300E3369B /* DatePickerController.swift */,
+				86499AB628F78E7A00E3369B /* CustomCalendarExampleController.swift */,
+			);
+			path = TodayYou;
+			sourceTree = "<group>";
+		};
+		868C7A1F28F7530300B7D4E9 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
 				86A4BE342846604900555B6D /* Diary.swift */,
 				86718B0827FE37660027A805 /* DiaryViewController.swift */,
 				86A4BE30284655A500555B6D /* DiaryCell.swift */,
 				86A4BE3228465B1E00555B6D /* WriteDiaryViewController.swift */,
 				86A4BE362846699400555B6D /* DiaryDetailViewController.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		868C7A2028F7533A00B7D4E9 /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
 				86A4BE3828466F0100555B6D /* ToDoViewController.swift */,
 				86A4BE4F2847FEB100555B6D /* Task.swift */,
-				86A4BE492847D98900555B6D /* HowYouViewController.swift */,
-				86A4BE4D2847EEE200555B6D /* HowYouCollectionViewCell.swift */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		868C7A2128F7539900B7D4E9 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				86A4BE4328476B6F00555B6D /* MyPageViewController.swift */,
 				86F66750284805170082E8C6 /* AddCalendarCollectionViewCell.swift */,
 				86F66752284805620082E8C6 /* UpcomingCalendarCollectionViewCell.swift */,
 				86F66754284805E30082E8C6 /* MpToDoCollectionViewCell.swift */,
 				86F66756284806220082E8C6 /* WeatherCollectionViewCell.swift */,
+				86816C54291319610006CE69 /* MyPageCell.swift */,
 			);
-			path = TodayYou;
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +184,7 @@
 			name = TodayYou;
 			packageProductDependencies = (
 				86A4BE3D284760C000555B6D /* SnapKit */,
+				8696646B28F7547C008345D0 /* CalendarKit */,
 			);
 			productName = TodayYou;
 			productReference = 860D456827F98DDE00EEFFA1 /* TodayYou.app */;
@@ -177,6 +216,7 @@
 			mainGroup = 860D455F27F98DDE00EEFFA1;
 			packageReferences = (
 				86A4BE3C284760C000555B6D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8696646A28F7547C008345D0 /* XCRemoteSwiftPackageReference "CalendarKit" */,
 			);
 			productRefGroup = 860D456927F98DDE00EEFFA1 /* Products */;
 			projectDirPath = "";
@@ -193,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860D457827F98DDF00EEFFA1 /* LaunchScreen.storyboard in Resources */,
+				865F61C228E530A100470CD3 /* GoogleService-Info.plist in Resources */,
 				860D457527F98DDF00EEFFA1 /* Assets.xcassets in Resources */,
 				860D457327F98DDE00EEFFA1 /* Main.storyboard in Resources */,
 			);
@@ -218,9 +259,12 @@
 				86A4BE3328465B1E00555B6D /* WriteDiaryViewController.swift in Sources */,
 				86A4BE4A2847D98900555B6D /* HowYouViewController.swift in Sources */,
 				86F66755284805E30082E8C6 /* MpToDoCollectionViewCell.swift in Sources */,
+				86499AB728F78E7A00E3369B /* CustomCalendarExampleController.swift in Sources */,
+				86816C55291319610006CE69 /* MyPageCell.swift in Sources */,
 				86F66751284805170082E8C6 /* AddCalendarCollectionViewCell.swift in Sources */,
 				86A4BE352846604900555B6D /* Diary.swift in Sources */,
 				86E13BC728396B24003C4C92 /* RoundCornerButton.swift in Sources */,
+				86499AB528F78DC300E3369B /* DatePickerController.swift in Sources */,
 				86A4BE502847FEB100555B6D /* Task.swift in Sources */,
 				860D456E27F98DDE00EEFFA1 /* SceneDelegate.swift in Sources */,
 			);
@@ -448,6 +492,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8696646A28F7547C008345D0 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		86A4BE3C284760C000555B6D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -459,6 +511,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8696646B28F7547C008345D0 /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8696646A28F7547C008345D0 /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
 		86A4BE3D284760C000555B6D /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 86A4BE3C284760C000555B6D /* XCRemoteSwiftPackageReference "SnapKit" */;

@@ -11,7 +11,7 @@ class MyPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.title = "6월 1일의 너"
+      self.title = "오늘의 너"
     }
 }
 

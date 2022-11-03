@@ -49,8 +49,8 @@ final class HowYouCollectionViewCell: UICollectionViewCell {
         $0.bottom.equalToSuperview().inset(16.0)
     }
 
-    UserNoLabel.text = "#UserNo"
-    ContentLabel.text = "ContentTest ContentTest "
+    UserNoLabel.text = "#00001"
+    ContentLabel.text = "How are you "
   }
 
     /*func setup(with realTimeArrival: StationArrivalDatResponseModel.RealTimeArrival) {
