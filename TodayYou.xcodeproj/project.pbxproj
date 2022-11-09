@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217F58496FF2AF8054503136 /* Pods_TodayYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475F8C3ECE5244DFF8E6B666 /* Pods_TodayYou.framework */; };
 		860D456C27F98DDE00EEFFA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860D456B27F98DDE00EEFFA1 /* AppDelegate.swift */; };
 		860D456E27F98DDE00EEFFA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860D456D27F98DDE00EEFFA1 /* SceneDelegate.swift */; };
-		860D457027F98DDE00EEFFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860D456F27F98DDE00EEFFA1 /* ViewController.swift */; };
 		860D457327F98DDE00EEFFA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860D457127F98DDE00EEFFA1 /* Main.storyboard */; };
 		860D457527F98DDF00EEFFA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860D457427F98DDF00EEFFA1 /* Assets.xcassets */; };
 		860D457827F98DDF00EEFFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860D457627F98DDF00EEFFA1 /* LaunchScreen.storyboard */; };
 		86499AB528F78DC300E3369B /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86499AB428F78DC300E3369B /* DatePickerController.swift */; };
 		86499AB728F78E7A00E3369B /* CustomCalendarExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86499AB628F78E7A00E3369B /* CustomCalendarExampleController.swift */; };
+		864CDC5B291BAAB90000F44E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 864CDC5A291BAAB90000F44E /* FirebaseAnalytics */; };
+		864CDC5D291BAAB90000F44E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 864CDC5C291BAAB90000F44E /* FirebaseAuth */; };
 		865F61C228E530A100470CD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 865F61C128E530A100470CD3 /* GoogleService-Info.plist */; };
 		86718B0927FE37660027A805 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86718B0827FE37660027A805 /* DiaryViewController.swift */; };
 		86816C55291319610006CE69 /* MyPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86816C54291319610006CE69 /* MyPageCell.swift */; };
@@ -50,10 +52,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FA396FE64CB53A7721709B8 /* Pods-TodayYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayYou.debug.xcconfig"; path = "Target Support Files/Pods-TodayYou/Pods-TodayYou.debug.xcconfig"; sourceTree = "<group>"; };
+		475F8C3ECE5244DFF8E6B666 /* Pods_TodayYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783BEE0E412C956D9357F991 /* Pods-TodayYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayYou.release.xcconfig"; path = "Target Support Files/Pods-TodayYou/Pods-TodayYou.release.xcconfig"; sourceTree = "<group>"; };
 		860D456827F98DDE00EEFFA1 /* TodayYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		860D456B27F98DDE00EEFFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		860D456D27F98DDE00EEFFA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		860D456F27F98DDE00EEFFA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		860D457227F98DDE00EEFFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		860D457427F98DDF00EEFFA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		860D457727F98DDF00EEFFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,18 +89,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A4BE3E284760C000555B6D /* SnapKit in Frameworks */,
+				864CDC5D291BAAB90000F44E /* FirebaseAuth in Frameworks */,
 				8696646C28F7547C008345D0 /* CalendarKit in Frameworks */,
+				864CDC5B291BAAB90000F44E /* FirebaseAnalytics in Frameworks */,
+				217F58496FF2AF8054503136 /* Pods_TodayYou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78597B822F3D7F1EB242295A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FA396FE64CB53A7721709B8 /* Pods-TodayYou.debug.xcconfig */,
+				783BEE0E412C956D9357F991 /* Pods-TodayYou.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		860D455F27F98DDE00EEFFA1 = {
 			isa = PBXGroup;
 			children = (
 				860D456A27F98DDE00EEFFA1 /* TodayYou */,
 				860D456927F98DDE00EEFFA1 /* Products */,
+				78597B822F3D7F1EB242295A /* Pods */,
+				D1AF0438394F5B687F746ADB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,7 +132,6 @@
 				865F61C128E530A100470CD3 /* GoogleService-Info.plist */,
 				860D456B27F98DDE00EEFFA1 /* AppDelegate.swift */,
 				860D456D27F98DDE00EEFFA1 /* SceneDelegate.swift */,
-				860D456F27F98DDE00EEFFA1 /* ViewController.swift */,
 				860D457127F98DDE00EEFFA1 /* Main.storyboard */,
 				860D457427F98DDF00EEFFA1 /* Assets.xcassets */,
 				860D457627F98DDF00EEFFA1 /* LaunchScreen.storyboard */,
@@ -165,6 +182,14 @@
 			path = MyPage;
 			sourceTree = "<group>";
 		};
+		D1AF0438394F5B687F746ADB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				475F8C3ECE5244DFF8E6B666 /* Pods_TodayYou.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,10 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 860D457C27F98DDF00EEFFA1 /* Build configuration list for PBXNativeTarget "TodayYou" */;
 			buildPhases = (
+				7F5B5ABDF6BE82971583A7D1 /* [CP] Check Pods Manifest.lock */,
 				860D456427F98DDE00EEFFA1 /* Sources */,
 				860D456527F98DDE00EEFFA1 /* Frameworks */,
 				860D456627F98DDE00EEFFA1 /* Resources */,
 				86A4BE422847626800555B6D /* Embed Frameworks */,
+				AD3DC6397FC517831D7E4770 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +212,8 @@
 			packageProductDependencies = (
 				86A4BE3D284760C000555B6D /* SnapKit */,
 				8696646B28F7547C008345D0 /* CalendarKit */,
+				864CDC5A291BAAB90000F44E /* FirebaseAnalytics */,
+				864CDC5C291BAAB90000F44E /* FirebaseAuth */,
 			);
 			productName = TodayYou;
 			productReference = 860D456827F98DDE00EEFFA1 /* TodayYou.app */;
@@ -217,6 +246,7 @@
 			packageReferences = (
 				86A4BE3C284760C000555B6D /* XCRemoteSwiftPackageReference "SnapKit" */,
 				8696646A28F7547C008345D0 /* XCRemoteSwiftPackageReference "CalendarKit" */,
+				864CDC59291BAAB90000F44E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 860D456927F98DDE00EEFFA1 /* Products */;
 			projectDirPath = "";
@@ -241,6 +271,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F5B5ABDF6BE82971583A7D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodayYou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD3DC6397FC517831D7E4770 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodayYou/Pods-TodayYou-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodayYou/Pods-TodayYou-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodayYou/Pods-TodayYou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		860D456427F98DDE00EEFFA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -251,7 +323,6 @@
 				86A4BE372846699400555B6D /* DiaryDetailViewController.swift in Sources */,
 				86A4BE4E2847EEE200555B6D /* HowYouCollectionViewCell.swift in Sources */,
 				86A4BE31284655A500555B6D /* DiaryCell.swift in Sources */,
-				860D457027F98DDE00EEFFA1 /* ViewController.swift in Sources */,
 				86F66753284805620082E8C6 /* UpcomingCalendarCollectionViewCell.swift in Sources */,
 				860D456C27F98DDE00EEFFA1 /* AppDelegate.swift in Sources */,
 				86A4BE4428476B6F00555B6D /* MyPageViewController.swift in Sources */,
@@ -410,6 +481,7 @@
 		};
 		860D457D27F98DDF00EEFFA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA396FE64CB53A7721709B8 /* Pods-TodayYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +512,7 @@
 		};
 		860D457E27F98DDF00EEFFA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 783BEE0E412C956D9357F991 /* Pods-TodayYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +565,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		864CDC59291BAAB90000F44E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		8696646A28F7547C008345D0 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/richardtop/CalendarKit";
@@ -511,6 +592,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		864CDC5A291BAAB90000F44E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 864CDC59291BAAB90000F44E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		864CDC5C291BAAB90000F44E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 864CDC59291BAAB90000F44E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		8696646B28F7547C008345D0 /* CalendarKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8696646A28F7547C008345D0 /* XCRemoteSwiftPackageReference "CalendarKit" */;
