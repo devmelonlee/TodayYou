@@ -15,8 +15,7 @@
 		860D457827F98DDF00EEFFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860D457627F98DDF00EEFFA1 /* LaunchScreen.storyboard */; };
 		86499AB528F78DC300E3369B /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86499AB428F78DC300E3369B /* DatePickerController.swift */; };
 		86499AB728F78E7A00E3369B /* CustomCalendarExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86499AB628F78E7A00E3369B /* CustomCalendarExampleController.swift */; };
-		864CDC5B291BAAB90000F44E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 864CDC5A291BAAB90000F44E /* FirebaseAnalytics */; };
-		864CDC5D291BAAB90000F44E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 864CDC5C291BAAB90000F44E /* FirebaseAuth */; };
+		864CDC5F291BB7A40000F44E /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CDC5E291BB7A40000F44E /* MyView.swift */; };
 		865F61C228E530A100470CD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 865F61C128E530A100470CD3 /* GoogleService-Info.plist */; };
 		86718B0927FE37660027A805 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86718B0827FE37660027A805 /* DiaryViewController.swift */; };
 		86816C55291319610006CE69 /* MyPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86816C54291319610006CE69 /* MyPageCell.swift */; };
@@ -64,6 +63,7 @@
 		860D457927F98DDF00EEFFA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86499AB428F78DC300E3369B /* DatePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerController.swift; sourceTree = "<group>"; };
 		86499AB628F78E7A00E3369B /* CustomCalendarExampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarExampleController.swift; sourceTree = "<group>"; };
+		864CDC5E291BB7A40000F44E /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		865F61C128E530A100470CD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		86718B0827FE37660027A805 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		86816C54291319610006CE69 /* MyPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCell.swift; sourceTree = "<group>"; };
@@ -89,9 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A4BE3E284760C000555B6D /* SnapKit in Frameworks */,
-				864CDC5D291BAAB90000F44E /* FirebaseAuth in Frameworks */,
 				8696646C28F7547C008345D0 /* CalendarKit in Frameworks */,
-				864CDC5B291BAAB90000F44E /* FirebaseAnalytics in Frameworks */,
 				217F58496FF2AF8054503136 /* Pods_TodayYou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +142,7 @@
 				86A4BE4D2847EEE200555B6D /* HowYouCollectionViewCell.swift */,
 				86499AB428F78DC300E3369B /* DatePickerController.swift */,
 				86499AB628F78E7A00E3369B /* CustomCalendarExampleController.swift */,
+				864CDC5E291BB7A40000F44E /* MyView.swift */,
 			);
 			path = TodayYou;
 			sourceTree = "<group>";
@@ -212,8 +211,6 @@
 			packageProductDependencies = (
 				86A4BE3D284760C000555B6D /* SnapKit */,
 				8696646B28F7547C008345D0 /* CalendarKit */,
-				864CDC5A291BAAB90000F44E /* FirebaseAnalytics */,
-				864CDC5C291BAAB90000F44E /* FirebaseAuth */,
 			);
 			productName = TodayYou;
 			productReference = 860D456827F98DDE00EEFFA1 /* TodayYou.app */;
@@ -246,7 +243,6 @@
 			packageReferences = (
 				86A4BE3C284760C000555B6D /* XCRemoteSwiftPackageReference "SnapKit" */,
 				8696646A28F7547C008345D0 /* XCRemoteSwiftPackageReference "CalendarKit" */,
-				864CDC59291BAAB90000F44E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 860D456927F98DDE00EEFFA1 /* Products */;
 			projectDirPath = "";
@@ -318,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864CDC5F291BB7A40000F44E /* MyView.swift in Sources */,
 				86A4BE3928466F0100555B6D /* ToDoViewController.swift in Sources */,
 				86718B0927FE37660027A805 /* DiaryViewController.swift in Sources */,
 				86A4BE372846699400555B6D /* DiaryDetailViewController.swift in Sources */,
@@ -490,6 +487,7 @@
 				DEVELOPMENT_TEAM = UWHXNW23SX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TodayYou/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "오늘의, 너";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -497,6 +495,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +520,7 @@
 				DEVELOPMENT_TEAM = UWHXNW23SX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TodayYou/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "오늘의, 너";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -528,6 +528,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,14 +566,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		864CDC59291BAAB90000F44E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
 		8696646A28F7547C008345D0 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/richardtop/CalendarKit";
@@ -592,16 +585,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		864CDC5A291BAAB90000F44E /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 864CDC59291BAAB90000F44E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		864CDC5C291BAAB90000F44E /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 864CDC59291BAAB90000F44E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
 		8696646B28F7547C008345D0 /* CalendarKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8696646A28F7547C008345D0 /* XCRemoteSwiftPackageReference "CalendarKit" */;
